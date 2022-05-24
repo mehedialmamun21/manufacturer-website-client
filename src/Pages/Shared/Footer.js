@@ -4,7 +4,7 @@ import footerTopImg from '../../Images/nav.jpg';
 const Footer = () => {
     const d = new Date();
     return (
-        <footer class="footer footer-center p-10 bg-accent text-white">
+        <footer class="footer footer-center p-10 bg-accent text-white mt-10">
             <div>
                 <img src={footerTopImg} width="125px" className='rounded' alt="" />
                 <p class="font-bold">
