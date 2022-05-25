@@ -1,6 +1,6 @@
 import React from 'react';
 import logisticImg from '../../Images/logisticImg.jpg';
-import logistic1 from '../../Images/logistic1.jpg';
+// import logistic1 from '../../Images/logistic1.jpg';
 import logistic2 from '../../Images/logistic2.jpg';
 import logistic3 from '../../Images/logistic3.jpg';
 // import logistic4 from '../../Images/logistic4.jpg';
@@ -26,7 +26,7 @@ const ExtraLogistics = () => {
             </div>
             <div class="flex flex-col w-full border-opacity-50 my-10">
                 <div class="divider font-bold text-accent text-2xl">OUR PROMISE</div>
-                <h2 className='text-center text-xl my-4'>As a specialist car parts supplier we bring you the parts you need</h2>
+                <h2 className='text-center text-xl my-4 font-semibold text-accent'>As a specialist car parts supplier we bring you the parts you need</h2>
                 <p>
                     We have been a car parts supplier since 1986. From the start we are a specialist. First in parts for Asian cars and now also in shock absorbers for all brands and in parts for all electric vehicles. We always look for opportunities to fulfil your needs. By being a specialist we can promis you full ranges, high availablity, premium quality and competitive prices.
                 </p>

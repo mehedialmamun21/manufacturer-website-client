@@ -31,7 +31,7 @@ const Home = () => {
 
             <BusinessSummary></BusinessSummary>
 
-            <div class="flex flex-col w-full border-opacity-50 text-2xl font-bold text-accent my-10">
+            <div class="flex flex-col w-full border-opacity-50 text-2xl font-bold text-accent my-40">
                 <div class="divider">WHAT CUSTOMERS SAY ABOUT KAVO PARTS</div>
             </div>
 
