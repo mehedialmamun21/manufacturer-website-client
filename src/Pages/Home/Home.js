@@ -10,14 +10,14 @@ const Home = () => {
     useEffect(() => {
         fetch("http://localhost:5000/service")
             .then((res) => res.json())
-            .then((data) => setCollections(data.splice(0, 3)));
+            .then((data) => setCollections(data.splice(0, 6)));
     }, []);
 
     return (
         <div className='min-h-screen'>
             <Banner></Banner>
 
-            <div className="products-cont">
+            <div className="grid grid-cols-2 gap-7">
                 {collections.map((collection) => (
                     <Collection key={collection._id} collection={collection}></Collection>
                 ))}

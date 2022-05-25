@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-// import './Collection.css';
 
 const Collection = ({ collection }) => {
     const { _id, name, price, img, description, available_quantity, min_order_quantity
@@ -22,7 +21,7 @@ const Collection = ({ collection }) => {
                 <p>Available quantity : {available_quantity}</p>
                 <p>Min order quantity : {min_order_quantity}</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-primary" onClick={() => navigateToPurchasePage(_id)}>Purchase</button>
+                    <button class="btn btn-primary font-bold bg-gradient-to-r from-secondary to-primary text-white" onClick={() => navigateToPurchasePage(_id)}>Purchase</button>
                 </div>
             </div>
         </div>
