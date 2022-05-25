@@ -31,8 +31,11 @@ const Login = () => {
     );
 
     let signInError;
+
     const navigate = useNavigate();
+
     const location = useLocation();
+
     let from = location.state?.from?.pathname || "/";
 
     // useEffect(() => {
@@ -46,7 +49,11 @@ const Login = () => {
     }
 
     if (error || gError || resError) {
-        signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || resError}</small> </p>
+        signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || resError?.message}</small> </p>
+    }
+
+    if (user || gUser) {
+        navigate(from, { replace: true });
     }
 
     const onSubmit = data => {
@@ -56,6 +63,7 @@ const Login = () => {
 
 
     return (
+
         <div className="flex justify-center items-center h-screen">
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
@@ -142,6 +150,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 

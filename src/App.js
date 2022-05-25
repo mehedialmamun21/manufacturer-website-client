@@ -8,6 +8,8 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Blogs from './Pages/Blogs/Blogs';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Footer from './Pages/Shared/Footer';
+import SignUp from './Pages/Login/SignUp';
+import RequireAuth from './Pages/Login/RequireAuth';
 
 function App() {
   return (
@@ -16,11 +18,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home></Home>} />
-        <Route path="/purchase" element={<Purchase></Purchase>} />
+        <Route path="/purchase" element={<RequireAuth><Purchase></Purchase></RequireAuth>} />
         <Route path="/dashboard" element={<Dashboard></Dashboard>} />
         <Route path="/portfolio" element={<MyPortfolio></MyPortfolio>} />
         <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="/login" element={<Login></Login>} />
+        <Route path="/signup" element={<SignUp></SignUp>} />
 
       </Routes>
 
