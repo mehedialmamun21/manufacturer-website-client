@@ -7,40 +7,43 @@ import toolsImg from '../../Images/tools.png';
 
 const BusinessSummary = () => {
     return (
-        <div style={{
-            backgroundImage: `url(${summaryImg})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover'
-        }} class="stats stats-vertical lg:stats-horizontal shadow w-full mx-auto my-20 text-center">
 
-            <div class="stat">
-                {/* <div class="stat-title">{customerImg}</div> */}
-                <img className='mx-auto' src={customerImg} width="60px" alt="" />
-                <div class="stat-value">100+</div>
-                <div class="stat-desc text-2xl text-lime-600 font-bold">↘︎ Customers</div>
+        <div>
+            <div class="flex flex-col w-full border-opacity-50 text-3xl mt-16 font-bold text-accent">
+                <div class="divider">Business Summary</div>
             </div>
 
-            <div class="stat">
-                {/* <div class="stat-title"></div> */}
-                <img className='mx-auto' src={annualImg} width="60px" alt="" />
-                <div class="stat-value">120 M+</div>
-                <div class="stat-desc text-2xl text-info font-bold ">↘︎ Annual revenue</div>
-            </div>
+            <div style={{
+                backgroundImage: `url(${summaryImg})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover'
+            }} class="stats stats-vertical lg:stats-horizontal shadow w-full mx-auto mt-10 mb-20 text-center p-20">
 
-            <div class="stat">
-                {/* <div class="stat-title"></div> */}
-                <img className='mx-auto' src={reviewImg} width="60px" alt="" />
-                <div class="stat-value">33K+</div>
-                <div class="stat-desc  text-2xl text-accent font-bold">↘︎ Reviews</div>
-            </div>
+                <div class="stat">
+                    <img className='mx-auto' src={customerImg} width="60px" alt="" />
+                    <div class="stat-value">100+</div>
+                    <div class="stat-desc text-2xl text-lime-600 font-bold">↘︎ Customers</div>
+                </div>
 
-            <div class="stat">
-                {/* <div class="stat-title"></div> */}
-                <img className='mx-auto' src={toolsImg} width="60px" alt="" />
-                <div class="stat-value">50+</div>
-                <div class="stat-desc text-2xl text-secondary font-bold">↘︎ Tools</div>
-            </div>
+                <div class="stat">
+                    <img className='mx-auto' src={annualImg} width="60px" alt="" />
+                    <div class="stat-value">120 M+</div>
+                    <div class="stat-desc text-2xl text-info font-bold ">↘︎ Annual revenue</div>
+                </div>
 
+                <div class="stat">
+                    <img className='mx-auto' src={reviewImg} width="60px" alt="" />
+                    <div class="stat-value">33K+</div>
+                    <div class="stat-desc  text-2xl text-accent font-bold">↘︎ Reviews</div>
+                </div>
+
+                <div class="stat">
+                    <img className='mx-auto' src={toolsImg} width="60px" alt="" />
+                    <div class="stat-value">50+</div>
+                    <div class="stat-desc text-2xl text-secondary font-bold">↘︎ Tools</div>
+                </div>
+
+            </div>
         </div>
     );
 };

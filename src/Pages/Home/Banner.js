@@ -5,11 +5,10 @@ const Banner = () => {
     return (
         <div className="hero min-h-screen bg-banner-section-backImg mb-10">
             <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
+            <div class="hero-content text-center text-white">
                 <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold ">Hello there</h1>
-                    <p class="mb-5 text-lg mb-10"><b>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</b></p>
-                    {/* <PrimaryButton><b>Get Started</b></PrimaryButton> */}
+                    <h1 class="mb-5 text-5xl font-bold ">YOUR CAR PARTS SUPPLIER</h1>
+                    <p class="mb-5 text-lg mb-10"><b>FOR ASIAN CARS, ELECTRIC CARS AND SHOCK ABSORBERS </b></p>
                 </div>
             </div>
         </div>
