@@ -18,7 +18,13 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home></Home>} />
-        <Route path="/purchase" element={<RequireAuth><Purchase></Purchase></RequireAuth>} />
+
+        <Route path='/service/:serviceId' element={
+          <RequireAuth>
+            <Purchase></Purchase>
+          </RequireAuth>
+        }></Route>
+
         <Route path="/dashboard" element={<Dashboard></Dashboard>} />
         <Route path="/portfolio" element={<MyPortfolio></MyPortfolio>} />
         <Route path="/blogs" element={<Blogs></Blogs>} />
