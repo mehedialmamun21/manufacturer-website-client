@@ -15,13 +15,13 @@ const Collection = ({ collection }) => {
         <div class="card lg:card-side bg-base-100 shadow-xl">
             <figure><img src={img} alt="Album" /></figure>
             <div class="card-body">
-                <h2 class="card-title">{name}</h2>
-                <h5>{price}</h5>
+                <h2 class="card-title"><span className='font-bold text-accent text-2xl'>{name}</span></h2>
+                <h5> <span className='font-semibold'>Price :</span> BDT <span className='text-primary font-bold text-lg'>{price}</span> / pcs</h5>
                 <p>{description}</p>
-                <p>Available quantity : {available_quantity}</p>
-                <p>Min order quantity : {min_order_quantity}</p>
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary font-bold bg-gradient-to-r from-secondary to-primary text-white" onClick={() => navigateToPurchasePage(_id)}>Purchase</button>
+                <p> <span className='font-semibold'>Available :</span> <span className='text-primary font-bold text-lg'>{available_quantity}</span> pcs</p>
+                <p><span className='font-semibold'>Min Order :</span> <span className='text-primary font-bold text-lg'>{min_order_quantity}</span> pcs</p>
+                <div className="card-actions">
+                    <button class="btn btn-primary font-bold bg-gradient-to-r from-secondary to-primary text-white w-full" onClick={() => navigateToPurchasePage(_id)}> <b>Buy Now</b> </button>
                 </div>
             </div>
         </div>

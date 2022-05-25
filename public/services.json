@@ -2,7 +2,7 @@
     {
         "name" : "Brakes",
         "description" : "We are brakes manufacturer",
-        " price" : "50",
+        "price" : "50",
         "available_quantity" : "200",
         "min_order_quantity" : "30",
         "img" : "https://i.ibb.co/ydG8rG6/Ar2.jpg"
@@ -10,7 +10,7 @@
     {
         "name" : "Wheels",
         "description" : "We are wheels manufacturer",
-        " price" : "60",
+        "price" : "60",
         "available_quantity" : "300",
         "min_order_quantity" : "40",
         "img" : "https://i.ibb.co/Vp2RpJ7/Ar4.jpg"
@@ -18,7 +18,7 @@
     {
         "name" : "Lights",
         "description" : "We are lights manufacturer",
-        " price" : "40",
+        "price" : "40",
         "available_quantity" : "150",
         "min_order_quantity" : "20",
         "img" : "https://i.ibb.co/k19YSvh/Ar6.jpg"
@@ -26,7 +26,7 @@
     {
         "name" : "Starrings",
         "description" : "We are starrings manufacturer",
-        " price" : "70",
+        "price" : "70",
         "available_quantity" : "250",
         "min_order_quantity" : "50",
         "img" : "https://dcode.com.pk/mobile/x/img/mobile-blink-img-2.png"
@@ -34,7 +34,7 @@
     {
         "name" : "Bearings",
         "description" : "We are bearings manufacturer",
-        " price" : "80",
+        "price" : "80",
         "available_quantity" : "350",
         "min_order_quantity" : "25",
         "img" : "https://i.ibb.co/Vp2RpJ7/Ar4.jpg"
@@ -42,7 +42,7 @@
     {
         "name" : "Clutch",
         "description" : "We are clutches manufacturer",
-        " price" : "90",
+        "price" : "90",
         "available_quantity" : "450",
         "min_order_quantity" : "70",
         "img" : "https://i.ibb.co/ydG8rG6/Ar2.jpg"

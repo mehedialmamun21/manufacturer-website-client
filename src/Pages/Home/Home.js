@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Collection from '../Collection/Collection';
 import Banner from './Banner';
-
+import BusinessSummary from './BusinessSummary';
 
 const Home = () => {
 
@@ -17,11 +17,15 @@ const Home = () => {
         <div className='min-h-screen'>
             <Banner></Banner>
 
-            <div className="grid grid-cols-2 gap-7">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7">
                 {collections.map((collection) => (
                     <Collection key={collection._id} collection={collection}></Collection>
                 ))}
             </div>
+
+            <BusinessSummary></BusinessSummary>
+
+
 
         </div>
     );

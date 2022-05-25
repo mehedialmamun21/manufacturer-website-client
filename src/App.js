@@ -10,6 +10,7 @@ import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Footer from './Pages/Shared/Footer';
 import SignUp from './Pages/Login/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/login" element={<Login></Login>} />
         <Route path="/signup" element={<SignUp></SignUp>} />
 
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
 
       <Footer></Footer>
