@@ -29,7 +29,7 @@ const OrderProcess = () => {
             phone: event.target.phone.value
         }
 
-        fetch('http://localhost:5000/purchase', {
+        fetch('http://localhost:5000/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
