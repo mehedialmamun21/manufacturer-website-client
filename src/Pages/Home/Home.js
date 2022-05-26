@@ -35,11 +35,9 @@ const Home = () => {
                 <div class="divider">WHAT CUSTOMERS SAY ABOUT KAVO PARTS</div>
             </div>
 
-            <ExtraLogistics></ExtraLogistics>
-
             <ExtraCarousel></ExtraCarousel>
 
-
+            <ExtraLogistics></ExtraLogistics>
 
         </div>
     );

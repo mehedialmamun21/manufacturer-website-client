@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfil
 import auth from '../../firebase.init';
 import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
+import googleIcon from "../../Images/google.png";
 // import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
@@ -133,13 +134,13 @@ const SignUp = () => {
                         <input className="btn w-full max-w-xs" type="submit" value="Sign Up" />
                     </form>
 
-                    <small><p>Already have an account? <Link className="text-secondary font-bold" to="/login" >Please login</Link> </p></small>
+                    <p className="font-semibold">Already have an account ? <Link className="text-secondary font-bold" to="/login" ><span className="ml-8">Please login</span></Link> </p>
 
-                    <div className="divider">OR</div>
+                    <div className="divider">Or continue with</div>
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn btn-outline"
-                    >Continue With Google</button>
+                        className="btn btn-outline bg-gray-300"
+                    > <img src={googleIcon} alt="" /><b className="mx-2 text-accent">Google</b></button>
                 </div>
             </div>
         </div>

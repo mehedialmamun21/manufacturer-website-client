@@ -5,6 +5,7 @@ import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 // import useToken from "../../hooks/useToken";
+import googleIcon from "../../Images/google.png";
 
 const Login = () => {
 
@@ -132,7 +133,7 @@ const Login = () => {
                                 alert('Password Reset email sent..');
                             }}
                         >
-                            <h5 className="pb-4 text-secondary font-semibold">Forgot password?</h5>
+                            <h5 className="pb-4 text-secondary font-semibold">Forgot password ?</h5>
                         </button>
 
 
@@ -140,13 +141,13 @@ const Login = () => {
                         <input className="btn w-full max-w-xs" type="submit" value="Login" />
                     </form>
 
-                    <small><p>New to Doctors Portal? <Link className="text-secondary font-bold" to="/signup" >Create new account</Link> </p></small>
+                    <p className="font-semibold">New to KAVO Parts ? <Link className="text-secondary font-bold" to="/signup" ><span className="ml-4">Create new account</span></Link> </p>
 
-                    <div className="divider">OR</div>
+                    <div className="divider">Or continue with</div>
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn btn-outline"
-                    >Continue With Google</button>
+                        className="btn btn-outline bg-gray-300"
+                    > <img src={googleIcon} alt="" /><b className="mx-2 text-accent">Google</b></button>
                 </div>
             </div>
         </div>

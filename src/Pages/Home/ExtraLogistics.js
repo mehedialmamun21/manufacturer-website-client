@@ -1,9 +1,7 @@
 import React from 'react';
 import logisticImg from '../../Images/logisticImg.jpg';
-// import logistic1 from '../../Images/logistic1.jpg';
 import logistic2 from '../../Images/logistic2.jpg';
 import logistic3 from '../../Images/logistic3.jpg';
-// import logistic4 from '../../Images/logistic4.jpg';
 import logistic5 from '../../Images/logistic5.jpg';
 import logistic6 from '../../Images/logistic6.jpg';
 
@@ -16,11 +14,9 @@ const ExtraLogistics = () => {
             <div>
                 <img className='mx-auto' src={logisticImg} alt="" />
                 <div className='lg:flex justify-center '>
-                    {/* <img src={logistic1} alt="" /> */}
-                    <img className='mx-1' src={logistic2} alt="" />
+                    <img className='mx-2 sm:mb-2' src={logistic2} alt="" />
                     <img src={logistic3} alt="" />
-                    {/* <img src={logistic4} alt="" /> */}
-                    <img className='mx-1' src={logistic5} alt="" />
+                    <img className='mx-2 my-2' src={logistic5} alt="" />
                     <img src={logistic6} alt="" />
                 </div>
             </div>
