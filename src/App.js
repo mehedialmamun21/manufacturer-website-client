@@ -1,4 +1,7 @@
 import './App.css';
+
+import { ToastContainer } from 'react-toastify';
+
 import Navbar from './Pages/Shared/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
@@ -56,6 +59,8 @@ function App() {
       </Routes>
 
       <Footer></Footer>
+
+      <ToastContainer />
     </div>
   );
 }
