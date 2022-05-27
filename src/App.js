@@ -1,6 +1,7 @@
 import './App.css';
 
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from './Pages/Shared/Navbar';
 import { Route, Routes } from 'react-router-dom';
@@ -21,6 +22,7 @@ import ManageOrders from './Pages/Dashboard/ManageOrders';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin';
+import RequireAdmin from './Pages/Login/RequireAdmin';
 
 
 function App() {
@@ -47,7 +49,7 @@ function App() {
           <Route path="myProfile" element={<MyProfile></MyProfile>}> </Route>
           <Route path="manageOrders" element={<ManageOrders></ManageOrders>}> </Route>
           <Route path="addProduct" element={<AddProduct></AddProduct>}> </Route>
-          <Route path="makeAdmin" element={<MakeAdmin></MakeAdmin>}> </Route>
+          <Route path="makeAdmin" element={<RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>}> </Route>
           <Route path="manageProducts" element={<ManageProducts></ManageProducts>}> </Route>
         </Route>
 
@@ -60,7 +62,11 @@ function App() {
 
       <Footer></Footer>
 
-      <ToastContainer />
+      <ToastContainer toastStyle={{
+        marginTop: "4rem",
+        borderRadius: "20px",
+        backgroundColor: "red"
+      }} />
     </div>
   );
 }
