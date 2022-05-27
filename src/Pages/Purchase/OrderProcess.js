@@ -26,7 +26,8 @@ const OrderProcess = () => {
         const booking = {
             email: user.email,
             quantity: event.target.quantity.value,
-            phone: event.target.phone.value
+            phone: event.target.phone.value,
+            parts: product.name
         }
 
         fetch('http://localhost:5000/booking', {
