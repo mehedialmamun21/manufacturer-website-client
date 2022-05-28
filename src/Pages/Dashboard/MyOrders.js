@@ -1,8 +1,11 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+// import { useQuery } from 'react-query';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+// import Loading from '../Shared/Loading';
+import OrdersRow from './OrdersRow';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
@@ -34,6 +37,20 @@ const MyOrders = () => {
     }, [user])
 
 
+
+    // const [deletingUser, setDeletingUser] = useState(null);
+    // const { data: users, isLoading, refetch } = useQuery('doctors', () => fetch('http://localhost:5000/booking', {
+    //     headers: {
+    //         authorization: `Bearer ${localStorage.getItem('accessToken')}`
+    //     }
+    // }).then(res => res.json()));
+
+    // if (isLoading) {
+    //     return <Loading></Loading>
+    // }
+
+
+
     return (
         <div>
             <h2 className='my-5 font-bold text-lg text-indigo-400'>Total Orders : {orders.length}</h2>
@@ -45,18 +62,26 @@ const MyOrders = () => {
                             <th>User</th>
                             <th>Products</th>
                             <th>Quantity</th>
-
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            orders.map((order, index) => <tr>
-                                <th>{index + 1}</th>
-                                <td>{order.email}</td>
-                                <td>{order.parts}</td>
-                                <td>{order.quantity}</td>
-                                <td></td>
-                            </tr>)
+                            orders.map((order, index) => <OrdersRow
+
+                                key={order._id}
+                                order={order}
+                                index={index}
+
+                            ></OrdersRow>
+                                // <tr>
+                                //     <th>{index + 1}</th>
+                                //     <td>{order.email}</td>
+                                //     <td>{order.parts}</td>
+                                //     <td>{order.quantity}</td>
+                                //     <td><button class="btn btn-xs btn-error">Delete</button></td>
+                                // </tr>
+                            )
                         }
 
                     </tbody>

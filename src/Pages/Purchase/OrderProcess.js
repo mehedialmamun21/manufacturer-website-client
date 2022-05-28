@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
-import PrimaryButton from '../Shared/PrimaryButton';
+// import PrimaryButton from '../Shared/PrimaryButton';
 
 
 const OrderProcess = () => {
@@ -40,16 +40,13 @@ const OrderProcess = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+
                 if (data.success) {
                     toast(`Order has been placed successfully`)
                 }
-                // else {
-                //     toast.error(`Already have an appointment on ${data.booking?.date} at ${data.booking?.slot}`);
-                // }
 
             })
     }
-
 
 
 
