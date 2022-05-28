@@ -14,7 +14,7 @@ const OrderProcess = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        const url = `https://mighty-woodland-94460.herokuapp.com/service/${serviceId}`;
+        const url = `http://localhost:5000/service/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -32,7 +32,7 @@ const OrderProcess = () => {
             parts: product.name
         }
 
-        fetch('https://mighty-woodland-94460.herokuapp.com/booking', {
+        fetch('http://localhost:5000/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +43,7 @@ const OrderProcess = () => {
             .then(data => {
                 console.log(data);
 
-                if (data.success) {
+                if (data.acknowledged) {
                     toast(`Order has been placed successfully`)
                 }
 

@@ -4,19 +4,14 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWith
 import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import googleIcon from "../../Images/google.png";
 import useToken from "../../hooks/useToken";
+import googleIcon from "../../Images/google.png";
 
 const Login = () => {
 
     const [email, setEmail] = useState('');
 
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-
-    if (gUser) {
-        console.log(gUser);
-    }
-
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [
         signInWithEmailAndPassword,
@@ -47,11 +42,7 @@ const Login = () => {
     }
 
     if (error || gError || resError) {
-        signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || resError?.message}</small> </p>
-    }
-
-    if (user || gUser) {
-        navigate(from, { replace: true });
+        signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || resError}</small> </p>
     }
 
     const onSubmit = data => {
@@ -61,7 +52,6 @@ const Login = () => {
 
 
     return (
-
         <div className="flex justify-center items-center h-screen">
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
@@ -130,7 +120,7 @@ const Login = () => {
                                 alert('Password Reset email sent..');
                             }}
                         >
-                            <h5 className="pb-4 text-secondary font-semibold">Forgot password ?</h5>
+                            <h5 className="pb-4 text-secondary font-semibold">Forgot password?</h5>
                         </button>
 
 
@@ -141,6 +131,7 @@ const Login = () => {
                     <p className="font-semibold">New to KAVO Parts ? <Link className="text-secondary font-bold" to="/signup" ><span className="ml-4">Create new account</span></Link> </p>
 
                     <div className="divider">Or continue with</div>
+
                     <button
                         onClick={() => signInWithGoogle()}
                         className="btn btn-outline bg-gray-300"
@@ -148,7 +139,6 @@ const Login = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 

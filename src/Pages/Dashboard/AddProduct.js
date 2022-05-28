@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = "https://mighty-woodland-94460.herokuapp.com/service";
+        const url = "http://localhost:5000/service";
         fetch(url, {
             method: 'POST',
             headers: {

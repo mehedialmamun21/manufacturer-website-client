@@ -8,7 +8,7 @@ const Purchase = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        const url = `https://mighty-woodland-94460.herokuapp.com/service/${serviceId}`;
+        const url = `http://localhost:5000/service/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))

@@ -5,10 +5,10 @@ const useToken = user => {
     useEffect(() => {
         // console.log('user inside useToken', user);
         const email = user?.user?.email;
-        const currentUser = { email: email };
 
         if (email) {
-            fetch(`https://mighty-woodland-94460.herokuapp.com/user/${email}`, {
+            const currentUser = { email: email };
+            fetch(`http://localhost:5000/user/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
