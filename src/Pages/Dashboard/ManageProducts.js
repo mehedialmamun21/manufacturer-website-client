@@ -4,7 +4,7 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/service")
+        fetch("https://mighty-woodland-94460.herokuapp.com/service")
             .then((res) => res.json())
             .then((data) => setProducts(data));
     }, []);
@@ -12,7 +12,7 @@ const ManageProducts = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("Are You Sure ?");
         if (proceed) {
-            const url = `http://localhost:5000/service/${id}`;
+            const url = `https://mighty-woodland-94460.herokuapp.com/service/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

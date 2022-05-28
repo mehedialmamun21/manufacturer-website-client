@@ -11,7 +11,7 @@ const Home = () => {
     const [collections, setCollections] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/service")
+        fetch("https://mighty-woodland-94460.herokuapp.com/service")
             .then((res) => res.json())
             .then((data) => setCollections(data.splice(0, 6)));
     }, []);

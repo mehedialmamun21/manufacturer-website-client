@@ -6,7 +6,7 @@ const ManageOrders = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/manage")
+        fetch("https://mighty-woodland-94460.herokuapp.com/manage")
             .then((res) => res.json())
             .then((data) => setProducts(data));
     }, []);
