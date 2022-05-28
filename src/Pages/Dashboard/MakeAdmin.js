@@ -15,7 +15,6 @@ const MakeAdmin = () => {
     }
     return (
         <div>
-            <h2>from make an admin page : {users.length} </h2>
             <div class="overflow-x-auto">
                 <table class="table w-full">
                     <thead>

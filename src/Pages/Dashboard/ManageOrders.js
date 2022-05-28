@@ -14,7 +14,6 @@ const ManageOrders = () => {
 
     return (
         <div>
-            <h2>Manage orders</h2>
             <div class="overflow-x-auto">
                 <table class="table w-full">
 

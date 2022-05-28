@@ -27,7 +27,6 @@ const ManageProducts = () => {
 
     return (
         <div>
-            <h2>from manage products route</h2>
             <div class="overflow-x-auto">
                 <table class="table w-full">
                     <thead>
