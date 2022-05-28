@@ -4,6 +4,7 @@ import Banner from './Banner';
 import BusinessSummary from './BusinessSummary';
 import ExtraCarousel from './ExtraCarousel';
 import ExtraLogistics from './ExtraLogistics';
+import ShowReview from './ShowReview';
 
 const Home = () => {
 
@@ -33,7 +34,9 @@ const Home = () => {
 
             <div class="flex flex-col w-full border-opacity-50 text-2xl font-bold text-accent my-40">
                 <div class="divider">WHAT CUSTOMERS SAY ABOUT KAVO PARTS</div>
+                <ShowReview></ShowReview>
             </div>
+
 
             <ExtraCarousel></ExtraCarousel>
 
