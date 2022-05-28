@@ -12,7 +12,7 @@ const Home = () => {
     useEffect(() => {
         fetch("https://mighty-woodland-94460.herokuapp.com/service")
             .then((res) => res.json())
-            .then((data) => setCollections(data.splice(0, 6)));
+            .then((data) => setCollections(data.splice(0, 10)));
     }, []);
 
     return (
