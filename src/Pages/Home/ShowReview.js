@@ -15,7 +15,7 @@ const ShowReview = () => {
 
     return (
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {
                 reviews.map((review) => (
                     <ReviewCollection
