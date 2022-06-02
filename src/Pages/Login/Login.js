@@ -136,6 +136,7 @@ const Login = () => {
                         onClick={() => signInWithGoogle()}
                         className="btn btn-outline bg-gray-300"
                     > <img src={googleIcon} alt="" /><b className="mx-2 text-accent">Google</b></button>
+
                 </div>
             </div>
         </div>

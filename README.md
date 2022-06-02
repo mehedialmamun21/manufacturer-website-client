@@ -2,8 +2,6 @@
 
 ## https://parts-supplier.web.app/
 
-In the project directory, you can run:
-
 ### React query added
 
 ### React tailwind added
